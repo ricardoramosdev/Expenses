@@ -1,0 +1,23 @@
+@import '../../App.css';
+
+.balance-container{
+    background-color: var(--primary-red);
+    display: flex;
+    border-radius: 0.8rem;
+    margin: 0.6rem;
+    padding: 1rem;
+    color: var(--light-orange);
+}
+.balance{
+    width: 50%;
+}
+.brand-logo{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    align-items: center;
+}
+.balance-total{
+    margin:0.4rem 0;
+}

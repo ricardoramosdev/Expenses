@@ -1,0 +1,96 @@
+@import '../../App.css';
+.chart-container{
+    background-color: var(--light-orange);
+    border-radius: 0.8rem;
+    margin:0.6rem ;
+    padding: 1rem;
+    color: var(--dark-brown);
+
+}
+.chart-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+.bar-chart{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    color: var(--medium-brown);
+    height: 200px;
+
+}
+.day-expense{
+    margin: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    width: 2rem;
+    text-align: center;
+    flex-grow: 1;
+    position: relative;
+
+}
+.day-expense-bar{
+    background-color: var(--primary-red);
+    border-radius: 3px;
+}
+.day-expense-bar:hover{
+    background-color: var(--primary-blue);
+    cursor: pointer;
+}
+
+.day-expense .tooltiptext {
+    visibility: hidden;
+    background-color: var(--dark-brown);
+    color: var(--light-orange);
+    border-radius: 6px;
+   width: 120%;
+   padding: 5px 8px;
+   margin-bottom: 0.3rem;
+   font-size: 0.7rem;
+   font-weight: 600;
+   text-align: center;
+   transform: translateX(-8%);
+    /* Position the tooltip text - see examples below! */
+    position: relative;
+    top: 0 ;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .day-expense:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .week-day{
+    padding-top: 0.5rem;
+  }
+.total{
+    color: var(--medium-brown);
+    border-top: 2px solid rgba(204, 204, 204, 0.444);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    
+}
+.total-amount{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--dark-brown);
+}
+.total-data{
+    display: flex;
+    
+}
+.total-amount, .total-variation{
+    width: 50%;
+}
+.total-variation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.total-variation :first-child{
+    font-weight: bolder;
+    color: var(--dark-brown);
+}
